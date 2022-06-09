@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title></title>
+
+<link rel="stylesheet" href="Uscss.css">
+<div class="topnav" id="myTopnav">
+  <a href="sdd2.html" class="active">Home</a>
+ <!--a href="news.html">News</a-->
+  <a href="Contact.html">Forum</a>
+    <div class="dropdown">
+    <button class="dropbtn">About 
+     
+    </button>
+    <div class="dropdown-content">
+      <a href="AboutUs.html">About Us</a>
+      <a href="AboutLVP.html">About News</a>
+      <a href="AboutYNWA.html">About YNWA</a>
+    </div>
+  </div> 
+  <!--a href="about.html">About</a-->
+  <!--a href="javascript:void(0);" class="icon" onclick="Function()"-->
+   
+  </a>
+  
+</div>
+<script>
+
+
+  function print_result() {
+	
+    var name = document.f2.name.value;
+	//alert("Name = " + name);
+	
+	//var email = document.f2.email.value;
+    //alert("Email = " + email);
+
+    //var tel = document.f2.tel.value;
+    //alert("Tel = " + tel);
+	 
+	 
+    //var password = document.f2.pw.value;
+    //alert("Password = " + password);
+
+	var gender = document.write(document.f2.gender[0].value);
+		
+//	alert("Gender = " + gender);
+	//var dob = document.f2.dob.value;
+	//alert("Date of Birth = " + dob);
+    //var notification = document.f2.notification.value;
+	//alert("Notification = " + notification);
+    
+    alert("親愛的"+ name);
+	alert("您還想靠其他人保護自己？防範詐騙的第一度防線，其實就是您自己。");
+    alert("請致電防騙易熱線18222");
+	alert("謹祝身心健康。");
+
+  }
+
+</script>
+</head>
+<body>
+
+<h3>各位朋友，
+
+       隨着社會不斷的發展和進步，電話詐騙和網上騙案日益猖獗，我們日常面對的問題亦比從前複雜，稍一不慎就可能墮入騙局，您還想靠其他人保護自己？防範詐騙的第一度防線，其實就是您自己。
+      不少人會在日常生活及工作中遇上網絡情緣騙案。久而久之可能繼而受騙。除了您的「貪念」之外，騙徒還會利用您的感情，自稱執法部門人員、工程師、政府或銀行職員等專業人士，聲稱他們遇上法律或財務問題，令您在幫助朋友心理之下向他們申出援手。
+	無論是用社交媒體、電郵還是電話，騙徒手法雖然層出不窮，但萬變不離其宗，總是想盡辦法利用心理弱點，套取您的個人資料和信任，讓您雙手奉上金錢。防範詐騙，靠的不是別人，正是您自己。
+
+
+       社會上有不少為網絡情緣騙案受害者提供的申訴渠道、心理服務和社區精神健康服務。但對一些朋友來說，這些服務或申訴的推行方式可能未必切合個人需要和情況。以使他們未能得到及時的幫助。
+</br></br>
+       本網的成立的目的是為了協助受網絡情緣騙案困擾的人仕能及早發現和處理他們受騙的問題。
+      透過網上平台的科技發展和實證研究成果，本網希望提供網上資詢服務給予在社區上有需要人士，使他們能夠:</br></br>（1）在短時間內、</br>（2）得到專業人員支援和安排下，</br></br>提高防騙意識以及乃早發現騙徒，例如：網上認知行為發現和網上非實名分享等。使網絡情緣騙案的問題未變得嚴重前得到適切的幫助。
+
+       為了確保服務質素，本網收集了有效的詐騙機制和防騙措施，以確保網上的輔導內容和質素符合香港騙徒的現行準則和要求。
+
+       最後我在此謹代表本網開發人員 謹祝大家身心健康。
+	   </h3>
+
+<h1><a href="AboutYNWA.html">尋求音樂治療</a></h1>
+<h1>尋求線上心理輔導</h1>
+
+ <form name="f2" onSubmit="print_result()">
+    <table>
+	  <tr>
+        <td>Name</td>
+        <td>
+         
+          <input type="text" name="name"
+                 pattern="[a-z]*"
+                 />
+        </td>
+      </tr>
+	  
+      <tr>
+	  
+        <td>Email</td>
+        <td>
+          <!-- (a) -->
+          <input type="email" name="email"
+                 title="local-part@domain"  />
+        </td>
+      </tr>
+
+
+
+
+      
+
+            <!-- (f) -->
+            <tr>
+			<td>Gender</td>
+              <td>
+                <input type="radio" name="Gender" value="M" checked />Male
+                
+                <input type="radio" name="Gender" value="F"  />Female
+              </td>
+              
+            </tr>
+
+         
+         
+
+        </td>
+      </tr>
+    </table>
+    <br />
+
+    <input type="submit" value="Submit" />
+  </form>
+</body>
+</html>
