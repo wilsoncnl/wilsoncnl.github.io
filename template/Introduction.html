@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+<title></title>
+
+<style>
+h1 {
+  text-align: center;
+}
+</style>
+
+
+<body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+ 
+  
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Main</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <!--a class="nav-link active" aria-current="page" href="#">Home</a-->
+        <a class="nav-link" href="/introduction">Introduction</a>
+        <a class="nav-link" href="/dataanalysis">DataAnalysis</a>
+        <a class="nav-link" href="/datamodeling">DataModeling</a>
+        <a class="nav-link" href="/findingsnevaluation">Findings and Evaluation</a>
+        <a class="nav-link" href="/conclusion">Conclusion</a>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+ 
+<h1>Introduction</h1>
+<br/>
+<h3>Background</h3>
+<p>
+The Vocational Training Council (VTC) will conduct regular manpower surveys and publish reports for 24 major industry sectors to assess their manpower demands and supplies.</br>
+According to this manpower survey, it is a quantitative survey conducted once every 4 years to collect information of employees. In this 4-year cycle two manpower updates will be conducted through focus group meeting with industry representatives and data analytics of major recruitment platforms like CPJobs and CTgoodjob.</p>
+<br/>
+<h3>Project Objectives</h3> 
+<p>We need to enhance the efficiency of the operation efficiency of the Manpower Survey conducted by the HQIP of VTC, including enhancing the data collection, cleaning, modeling, and classification job advertisements. We need to retrieve, clean, and classify unstructured job advertisements into corresponding Principal Job Titles of an industry.</p>
+<br/>    
+<h3>Business Requirements</h3> 
+<p>Use the Data Science Technology to improve the efficiency and accuracy of job advertisements classification for the Manpower Survey conducted by HQIP of VTC and looking for a data analytic solution to simplify the task and enhance its accuracy.</p>
+<br/>
+<h3>Variables Chosen for Model Building</h3> 
+<p>title, job_code, education_level, working_experience, part_time, full_time.</p>
+<img src="{{url_for('static', filename='intro1.png')}}" align="left" />   
+<br/>
+<br/>
+<h3>Prediction Model </h3> 
+<p>Decision tree does not require normalization of data and it is very intuitive and easy to explain to technical teams as well as stakeholders.<br/>
+However, A small change in the data can cause a large change in the structure of the decision tree causing instability.
+</p>    
+    
+ 
+
+</body>
+
+
+</html>

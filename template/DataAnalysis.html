@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+<title></title>
+<style>
+h1 {
+  text-align: center;
+}
+    
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  display: flex;
+}
+
+</style>
+
+
+
+
+<body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+ 
+  
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Main</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <!--a class="nav-link active" aria-current="page" href="#">Home</a-->
+        <a class="nav-link" href="/introduction">Introduction</a>
+        <a class="nav-link" href="/dataanalysis">DataAnalysis</a>
+        <a class="nav-link" href="/datamodeling">DataModeling</a>
+        <a class="nav-link" href="/findingsnevaluation">Findings and Evaluation</a>
+        <a class="nav-link" href="/conclusion">Conclusion</a>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+    
+<h1>Data Preparation</h1>
+
+<h3>Sources of Data </h3>
+<p>
+Different job recruitment advertisements from major recruitment platforms like CPJobs and CTgoodjob.
+<br/>
+https://manpower-survey.vtc.edu.hk/<br/>
+Link for Sample Industry (Retail Trade)
+</p>
+
+<h3>Data Cleaning</h3> 
+<p>We have cleansed and prepared the data based on the following steps:<br/>
+1.	The data covered by the symbol finds the original data according to the sentence.
+<p>before</p>
+ <div class="column"><img src="{{url_for('static', filename='dp1.png')}}" align="left" /></div>
+ <div class="column"><img src="{{url_for('static', filename='dp2.png')}}" align="left" /></div>
+
+<p>after</p>
+
+ <div class="column"><img src="{{url_for('static', filename='dp3.png')}}" align="left" /> </div>
+<p>2.	As job code, which are with "0", "312(full time)/411(partime)", "317" should be changed to "000", "411", "517". We use R to modify them from the raw data.</p>
+<div class="column"><img src="{{url_for('static', filename='dp4.png')}}" align="left" /> </div>
+3.	We use R to change the complex data into a simple data.<br/>
+<div class="column"><img src="{{url_for('static', filename='dp5.png')}}" align="left" /> </div>
+<div class="column"><img src="{{url_for('static', filename='dp6.png')}}" align="left" /> </div>
+<div class="column"><img src="{{url_for('static', filename='dp7.png')}}" align="left" /> </div>
+<div class="column"><img src="{{url_for('static', filename='dp8.png')}}" align="left" /> </div>
+4.	There is no exact data. We use R to fetch suitable data.<br/>
+<div class="column"><img src="{{url_for('static', filename='dp9.png')}}" align="left" /> </div>
+<div class="column"><img src="{{url_for('static', filename='dp10.png')}}" align="left" /> </div>
+
+    
+<h3>Sample listing of dataset for model building </h3><br/>
+<div class="column"><img src="{{url_for('static', filename='dp11.png')}}" align="left" /> </div>
+<div class="column"><img src="{{url_for('static', filename='dp12.png')}}" align="left" /> </div>
+<h3>Data Exploration</h3>
+<div class="column"><img src="{{url_for('static', filename='de1.png')}}" align="left" /> </div>
+ --->job_code = 312<br/>
+<div class="column"><img src="{{url_for('static', filename='de2.png')}}" align="left" />  </div>  
+    The requirement of most companies for recuiters 
+is 0 work experience.
+    
+    
+0 -> F.5-7/DSE                  3 -> Degree<br/>
+<div class="column"><img src="{{url_for('static', filename='de3.png')}}" align="left" style="width:50%"/>  </div> 
+    The requirement of most companies for recuiters
+is a high school graduation.
+</p>
+</body>
+
+
+</html>
