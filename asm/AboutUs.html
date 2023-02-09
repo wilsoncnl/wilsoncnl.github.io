@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title></title>
+
+<link rel="stylesheet" href="Uscss.css">
+<div class="topnav" id="myTopnav">
+  <a href="Home.html" class="active">Home</a>
+ <!--a href="news.html">News</a-->
+  <a href="Contact.html">Forum</a>
+    <div class="dropdown">
+    <button class="dropbtn">About 
+     
+    </button>
+    <div class="dropdown-content">
+      <a href="AboutUs.html">About Us</a>
+      <a href="AboutLVP.html">About Liverpool</a>
+      <a href="AboutYNWA.html">About YNWA</a>
+    </div>
+  </div> 
+  <!--a href="about.html">About</a-->
+  <!--a href="javascript:void(0);" class="icon" onclick="Function()"-->
+   
+  </a>
+  
+</div>
+<script>
+
+
+  function print_result() {
+	
+    var name = document.f2.name.value;
+	alert("Name = " + name);
+	
+	var email = document.f2.email.value;
+    alert("Email = " + email);
+
+    var tel = document.f2.tel.value;
+    alert("Tel = " + tel);
+	 
+	 
+    var password = document.f2.pw.value;
+    alert("Password = " + password);
+
+	//var gender = document.write(document.f2.gender[0].value);
+	
+//	alert("Gender = " + gender);
+	var dob = document.f2.dob.value;
+	alert("Date of Birth = " + dob);
+    var notification = document.f2.notification.value;
+	alert("Notification = " + notification);
+    
+    
+    alert("Welcome to the club");
+
+
+  }
+
+</script>
+</head>
+<body>
+
+<h1>We are a group of fans who love Liverpool Football Club.</h1>
+
+<p>我們當中，有的支持了紅軍逾二十年、也有些才成為紅軍球迷一年半載；有的是因著她當年橫掃歐洲的輝煌戰績、有的是因為喜歡她的 pass and move，也有些是因為某球員的關係才認識紅軍……。
+
+但沒有關係，不管當初是怎樣開始戀上紅軍，儘管紅軍今天尚未染指英超冠軍、也許 pass and move 已暫不復存在、也許某球員早已離隊他投，甚或已退役，但這不曾影響我們作為紅軍第十二人堅定不移的支持紅軍的決心。 One Life One Team，對我們來說，是肯定的，是很自然的，是從不懷疑的。
+
+我們這群人，認識於網絡上的平台。我們本來素不相識，但基於大家對紅軍都有著志同道合的心、同樣的熱愛、同樣的忠誠、相近的看法，故此透過網絡的接觸，很容易便熟絡起來。久而久之，我們不但在網絡上「朝夕共對」，還會自發組織各項活動，與其他人真正的認識，成為朋友，並肩扶持。此外，我們最感到高興的，是不斷有新朋友加入，並且融入，讓我們在支持紅軍的不歸路上，真正的永不獨行。 We’ll never walk alone!
+
+紅軍球迷不知繁幾，我們只是其中的一小群；喜愛紅軍的方式可以有很多種、很多不同的程度與方向。對於支持紅軍，我們有一套「核心價值」，不一定與其餘廣大的紅軍球迷盡相同。但在紅軍這宇宙內，與其他團體是一同並存的。
+
+我們的「核心價值」：
+</p>
+
+<ol>
+<li>There is no one bigger than the Club!</li>
+<li>我們是堅定不移的紅軍第十二人</li>
+
+<li>There are only two teams in Liverpool — Liverpool and Liverpool Reserves.</li>
+
+<li>愛華頓是紅軍的同市宿敵；曼聯是紅軍的英超宿敵。我們討厭他們；</li>
+
+<li>我們或許有各自最喜愛的球員，但我們始終是紅軍迷，不是球星迷；</li>
+
+<li>只要是紅軍的職球員，不管他們的表現如何，我們會給予最大的支持與最大的包容；</li>
+
+<li>對於紅軍，我們承認是有著接近盲目的支持。紅軍贏波，我們必然由衷的雀躍；紅軍落敗，我們必然由衷的失落，但絕不損我們絕對的支持。</li>
+</ol>
+
+<p>我們建立這個球迷會，是希望可以認識更多認同這「核心價值」，彼此理念相同、看法相近的第十二人。我們明白利迷會有很多種，沒有劃一的標準，故此不會有一個地方會適合所有人， Anfield’s 12th 亦然。我們不強求迎合所有利迷，但渴求志同道合的利迷加入。若您在 Anfield’s 12th 蹓躂時感覺自然舒暢，歡迎您多逗留，與我們一起論盡紅軍、睇波購物、吹水聊天。若您覺得這兒頻率不合，也無謂勉強自己，待他日有緣再聚。
+
+我們不為追求數目，寧缺勿濫，最重要的，是要做到真正的團結、認識與同行！</p>
+<h1>Register</h1>
+
+ <form name="f2" onSubmit="print_result()">
+    <table>
+	  <tr>
+        <td>Name</td>
+        <td>
+         
+          <input type="text" name="name"
+                 pattern="[a-z]*"
+                 />
+        </td>
+      </tr>
+	  
+      <tr>
+	  
+        <td>Email</td>
+        <td>
+          <!-- (a) -->
+          <input type="email" name="email"
+                 title="local-part@domain"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Tel</td>
+        <td>
+          <!-- (b) -->
+          <input type="text" name="tel"
+                 pattern="(852-)[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"
+                 title="852-xxxxxxxx" />
+        </td>
+      </tr>
+
+
+
+      <tr>
+        <td>Password</td>
+        <td>
+          <!-- (d) -->
+          <input type="password" name="pw"
+                 pattern="^[a-zA-z0-9_-]{6,10}"
+                 title="starts with 6 to 10 chars including _ and -" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>Date Of Birth</td>
+        <td>
+           <input type="date" name="dob" 
+                    />
+
+            </tr>
+
+            <!-- (f) -->
+            <tr>
+			<td>Gender</td>
+              <td>
+                <input type="radio" name="Gender" value="M" checked />Male
+                
+                <input type="radio" name="Gender" value="F"  />Female
+              </td>
+              
+            </tr>
+
+            <tr>
+			<td>Receipt notification</td>
+              <td>
+                <select name="notification">
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </td>
+             
+            <tr>
+         
+
+        </td>
+      </tr>
+    </table>
+    <br />
+
+    <input type="submit" value="Join with the family" />
+  </form>
+</body>
+</html>
